@@ -1,0 +1,29 @@
+.box {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-picture-box {
+  position: relative;
+  height: 16rem;
+  width: 16rem;
+}
+
+.profile-picture {
+  border-radius: 1000px;
+}
+
+.hero-title {
+  font-size: 3.95rem;
+  font-family: var(--font-poppins);
+  font-weight: 700;
+  color: var(--text-primary);
+
+  text-align: center;
+
+  margin-top: 2.25rem;
+}
