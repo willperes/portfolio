@@ -5,6 +5,10 @@
 @import url("./fonts.css");
 @import url("./typography.css");
 
+:root {
+  --content-max-width: 800px;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -22,4 +26,8 @@ body {
 
 body {
   line-height: 1;
+}
+
+.content-max-width {
+  max-width: var(--content-max-width);
 }
