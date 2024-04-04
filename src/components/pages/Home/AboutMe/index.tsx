@@ -2,11 +2,11 @@ export const AboutMe: React.FC = () => {
   return (
     <section
       id={"about-me"}
-      className={"flex flex-col justify-center items-center px-8"}
+      className={"flex flex-col justify-center items-center"}
     >
-      <h1 className={"text-section-title mb-7"}>ABOUT ME</h1>
+      <h1 className={"text-section-title mb-8 sm:mb-12"}>ABOUT ME</h1>
 
-      <p className={"text-secondary text-center text-base"}>
+      <p className={"text-secondary text-center responsive-text-sm"}>
         Front-end Engineer with 2 years of hands-on experience in web and mobile
         development with ReactJS and React Native, and integration with Firebase
         and crash/performance monitoring. I have created and published an

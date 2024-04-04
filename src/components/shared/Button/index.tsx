@@ -22,6 +22,7 @@ const Button: React.FC<React.PropsWithChildren<Props>> = ({
 
 export enum ButtonVariant {
   PRIMARY = "primary",
+  SECONDARY = "secondary",
 }
 
 export enum ButtonSize {
@@ -31,12 +32,14 @@ export enum ButtonSize {
 
 const VARIANT_MAPS: Record<ButtonVariant, string> = {
   [ButtonVariant.PRIMARY]:
-    "text-black dark:text-white bg-white dark:bg-black border border-gray-700 rounded-full hover:text-white hover:dark:text-black hover:bg-black hover:dark:bg-white",
+    "text-black dark:text-white bg-white dark:bg-black border border-gray-700 dark:border-gray-300 rounded-full hover:text-white hover:dark:text-black hover:bg-black hover:dark:bg-white",
+  [ButtonVariant.SECONDARY]:
+    "text-white dark:text-black bg-black dark:bg-white border border-black dark:border-white rounded-full hover:text-black hover:dark:text-white hover:bg-white hover:dark:bg-black hover:border-black hover:dark:border-white",
 };
 
 const SIZE_MAPS: Record<ButtonSize, string> = {
-  [ButtonSize.MEDIUM]: "py-2 px-4 text-sm",
-  [ButtonSize.LARGE]: "py-4 px-12 text-base",
+  [ButtonSize.MEDIUM]: "py-2 px-4 responsive-text-sm",
+  [ButtonSize.LARGE]: "py-4 px-12 responsive-text-base",
 };
 
 export default Button;

@@ -18,7 +18,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={"flex justify-center"}>
-        <div className={"content-max-width flex flex-col gap-24"}>
+        <div
+          className={
+            "content-max-width flex flex-col gap-20 sm:gap-24 px-8 my-20 sm:my-24"
+          }
+        >
           <Hero />
           <AboutMe />
         </div>
