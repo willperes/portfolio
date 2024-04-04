@@ -5,7 +5,7 @@ export const Hero: React.FC = () => {
   return (
     <section
       id={"hero"}
-      className={"min-h-svh flex flex-col justify-center items-center px-8"}
+      className={"flex flex-col justify-center items-center px-8 pt-24"}
     >
       <div className={"relative h-64 w-64"}>
         <Image
@@ -24,7 +24,7 @@ export const Hero: React.FC = () => {
         Willian Peres
       </h1>
 
-      <p className={"text-secondary text-center mb-8"}>
+      <p className={"text-secondary text-base text-center mb-8"}>
         Passionate Software Engineer with a focus on React Native development,
         dedicated to crafting elegant and user-friendly mobile applications.
       </p>
