@@ -7,7 +7,7 @@ export const Hero: React.FC = () => {
       id={"hero"}
       className={"flex flex-col justify-center items-center"}
     >
-      <div className={"relative h-64 w-64"}>
+      <div className={"relative h-64 w-64 max-[400px]:h-60 max-[400px]:w-60"}>
         <Image
           alt={"Willian Peres profile picture"}
           src={"https://github.com/willperes.png"}

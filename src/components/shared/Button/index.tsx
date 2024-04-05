@@ -32,9 +32,9 @@ export enum ButtonSize {
 
 const VARIANT_MAPS: Record<ButtonVariant, string> = {
   [ButtonVariant.PRIMARY]:
-    "text-black dark:text-white bg-white dark:bg-black border border-gray-700 dark:border-gray-300 rounded-full hover:text-white hover:dark:text-black hover:bg-black hover:dark:bg-white",
+    "text-neutral-950 dark:text-neutral-50 bg-neutral-50 dark:bg-neutral-950 border border-gray-700 dark:border-gray-300 rounded-full hover:text-neutral-50 hover:dark:text-neutral-950 hover:bg-neutral-950 hover:dark:bg-neutral-50",
   [ButtonVariant.SECONDARY]:
-    "text-white dark:text-black bg-black dark:bg-white border border-black dark:border-white rounded-full hover:text-black hover:dark:text-white hover:bg-white hover:dark:bg-black hover:border-black hover:dark:border-white",
+    "text-neutral-50 dark:text-neutral-950 bg-neutral-950 dark:bg-neutral-50 border border-neutral-950 dark:border-neutral-50 rounded-full hover:text-neutral-950 hover:dark:text-neutral-50 hover:bg-neutral-50 hover:dark:bg-neutral-950 hover:border-neutral-950 hover:dark:border-neutral-50",
 };
 
 const SIZE_MAPS: Record<ButtonSize, string> = {
