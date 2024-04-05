@@ -6,7 +6,7 @@ export const Footer: React.FC = () => {
   return (
     <footer
       className={
-        "flex flex-row gap-10 justify-center items-center pt-10 pb-20 bg-white dark:bg-black"
+        "flex flex-row gap-10 justify-center items-center pt-6 pb-16 sm:pt-10 sm:pb-20 bg-white dark:bg-black"
       }
     >
       <a
