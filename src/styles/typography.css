@@ -32,6 +32,10 @@
     @apply text-lg sm:text-xl;
   }
 
+  .responsive-text-3xl {
+    @apply text-3xl sm:text-3xl;
+  }
+
   .responsive-text-4xl {
     @apply text-4xl sm:text-5xl;
   }

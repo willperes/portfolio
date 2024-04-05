@@ -1,4 +1,4 @@
-import { Inter, Poppins } from "next/font/google";
+import { Inter, Poppins, Praise } from "next/font/google";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -11,6 +11,12 @@ const poppins = Poppins({
   subsets: ["latin"],
 });
 
+const praise = Praise({
+  variable: "--font-praise",
+  weight: ["400"],
+  subsets: ["latin"],
+});
+
 export const Fonts: React.FC = () => {
   return (
     <>
@@ -20,6 +26,7 @@ export const Fonts: React.FC = () => {
         :root {
           --font-inter: ${inter.style.fontFamily};
           --font-poppins: ${poppins.style.fontFamily};
+          --font-praise: ${praise.style.fontFamily};
         }`,
         }}
       />

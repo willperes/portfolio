@@ -4,6 +4,7 @@ import { Hero } from "@/components/pages/Home/Hero";
 import { AboutMe } from "@/components/pages/Home/AboutMe";
 import { Experience } from "@/components/pages/Home/Experience";
 import { Footer } from "@/components/shared/Footer";
+import { Header } from "@/components/Header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,7 +20,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={"flex justify-center"}>
+      <Header />
+      <main className={"flex justify-center pt-5"}>
         <div
           className={
             "content-max-width flex flex-col gap-20 sm:gap-24 px-8 my-20 sm:my-24"
