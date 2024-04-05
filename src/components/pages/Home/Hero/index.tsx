@@ -2,6 +2,10 @@ import Button, { ButtonSize, ButtonVariant } from "@/components/shared/Button";
 import Image from "next/image";
 
 export const Hero: React.FC = () => {
+  function handleRedirectToMail(): void {
+    window.open("mailto:will.peres@outlook.com", "_blank");
+  }
+
   return (
     <section
       id={"hero"}
@@ -29,7 +33,9 @@ export const Hero: React.FC = () => {
         dedicated to crafting elegant and user-friendly mobile applications.
       </p>
 
-      <Button variant={ButtonVariant.SECONDARY}>Contact Me</Button>
+      <Button variant={ButtonVariant.SECONDARY} onClick={handleRedirectToMail}>
+        Contact Me
+      </Button>
     </section>
   );
 };
