@@ -10,7 +10,11 @@ export const Experience: React.FC = () => {
       <h1 className={"text-section-title mb-8 sm:mb-12"}>EXPERIENCE</h1>
 
       {workExperiences.map((experience, index) => (
-        <ExperienceEntry key={index} data={experience} index={index} />
+        <ExperienceEntry
+          key={index}
+          workExperience={experience}
+          index={index}
+        />
       ))}
     </section>
   );
