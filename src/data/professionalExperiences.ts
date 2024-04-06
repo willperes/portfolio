@@ -5,7 +5,7 @@ export const professionalExperiences: ProfessionalExperience[] = [
     {
         companyName: "Frexco",
         companyLogo: "/images/frexco.jpg",
-        position: "Full-stack Engineer",
+        position: "Full Stack Engineer",
         startDate: new Date(2022, 8, 1),
         endDate: new Date(2024, 2, 31),
         description: [
