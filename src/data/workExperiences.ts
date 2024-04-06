@@ -10,11 +10,16 @@ export const workExperiences: WorkExperience[] = [
         endDate: new Date(2024, 2, 31),
         description: [
             {
+                type: RichText.Type.Paragraph,
+                content: "Collaborated closely with the product team to innovate and develop solutions for an e-commerce application, enhancing the user experience and streamlining the purchase process across web and mobile platforms."
+            },
+            {
                 type: RichText.Type.UnorderedList,
                 content: [
                     "Developed and published an e-commerce mobile application using React Native from scratch with more than 5000 users.",
-                    "Maintained and implemented new features in a mobile application with React Native and libraries such as React Navigation, Redux, Styled-Components.",
-                    "Pull requests reviews.",
+                    "Implemented deep navigation and push notification functionalities to a React Native application.",
+                    "Continuously maintained and extended features within the React Native mobile application using libraries such as React Navigation, Redux, and Styled-Components.",
+                    "Conducted code reviews ensuring code quality and that best practices are being applied.",
                     "Implemented a digital wallet for receiving refunds and extra credits, and integrated it for product purchases.",
                     "Maintained and implemented microservices crucial for e-commerce, including ordering, payments and refunds."
                 ]
@@ -33,10 +38,11 @@ export const workExperiences: WorkExperience[] = [
                 type: RichText.Type.UnorderedList,
                 content: [
                     "Implemented new features for an e-commerce application with ReactJS, Redux, Styled-Components.",
-                    "Maintained and implemented features of a dashboard platform with ReactJS."
+                    "Maintained and implemented features of a dashboard platform with ReactJS.",
+                    "Created the company website with multiple pages from scratch using NextJS, Sass, Material UI."
                 ]
             }
         ],
-        keywords: ["ReactJS", "Redux", "Material UI (MUI), Styled-Components"]
+        keywords: ["ReactJS", "Redux", "Material UI (MUI), Styled-Components, Sass"]
     }
 ];

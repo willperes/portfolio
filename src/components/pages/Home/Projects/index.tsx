@@ -24,7 +24,7 @@ export const Projects: React.FC = () => {
 
       <div className={"flex flex-col gap-8 mt-4"}>
         {devProjects.slice(0, 3).map((project, index) => (
-          <ProjectCard key={index} project={project} />
+          <ProjectCard key={index} project={project} isHomePage />
         ))}
       </div>
 

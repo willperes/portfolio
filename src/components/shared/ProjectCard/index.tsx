@@ -4,9 +4,13 @@ import Image from "next/image";
 
 type Props = {
   project: DevProject;
+  isHomePage?: boolean;
 };
 
-export const ProjectCard: React.FC<Props> = ({ project }) => {
+export const ProjectCard: React.FC<Props> = ({
+  project,
+  isHomePage = false,
+}) => {
   function handleOpenProjectLink(): void {
     window.open(project.projectURL, "_blank");
   }
@@ -34,7 +38,7 @@ export const ProjectCard: React.FC<Props> = ({ project }) => {
           {project.title}
         </h1>
 
-        <p className={"text-tertiary responsive-text-xs line-clamp-2 mt-1"}>
+        <p className={"text-tertiary responsive-text-xs mt-1"}>
           {project.description}
         </p>
 
