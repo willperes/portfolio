@@ -22,7 +22,7 @@ export default function Home() {
       <main className={"flex justify-center header-padding"}>
         <div
           className={
-            "content-max-width content-padding flex flex-col gap-20 sm:gap-24 my-20 sm:my-24"
+            "content-max-width content-padding content-margin flex flex-col gap-20 sm:gap-24"
           }
         >
           <Hero />

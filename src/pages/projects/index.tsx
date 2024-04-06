@@ -17,7 +17,7 @@ export default function Projects() {
       <main className={"flex justify-center header-padding"}>
         <div
           className={
-            "content-max-width content-padding flex flex-col mt-12 sm:mt-20 mb-20 sm:my-24"
+            "content-max-width content-padding content-margin flex flex-col"
           }
         >
           <h1

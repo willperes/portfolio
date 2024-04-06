@@ -38,7 +38,11 @@ body {
 }
 
 .content-padding {
-  @apply px-4 sm:px-8;
+  @apply px-6 sm:px-8;
+}
+
+.content-margin {
+  @apply mt-12 sm:mt-20 mb-20 sm:my-24;
 }
 
 .header-height {
