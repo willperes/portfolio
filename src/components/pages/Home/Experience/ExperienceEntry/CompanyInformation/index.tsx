@@ -1,17 +1,17 @@
-import { WorkExperience } from "@/types/WorkExperience";
+import { ProfessionalExperience } from "@/types/ProfessionalExperience";
 import { formatThreeLetterMonthAndYear } from "@/utils/formatDate";
 import Image from "next/image";
 
 type Props = {
-  workExperience: WorkExperience;
+  experience: ProfessionalExperience;
 };
 
-export const CompanyInformation: React.FC<Props> = ({ workExperience }) => {
+export const CompanyInformation: React.FC<Props> = ({ experience }) => {
   function formatStartAndEndDate(): string {
-    const startDate = formatThreeLetterMonthAndYear(workExperience.startDate);
+    const startDate = formatThreeLetterMonthAndYear(experience.startDate);
 
-    if (workExperience.endDate) {
-      const endDate = formatThreeLetterMonthAndYear(workExperience.endDate);
+    if (experience.endDate) {
+      const endDate = formatThreeLetterMonthAndYear(experience.endDate);
       return `${startDate} - ${endDate}`;
     }
 
@@ -23,8 +23,8 @@ export const CompanyInformation: React.FC<Props> = ({ workExperience }) => {
       <div className={"flex flex-row items-center flex-1"}>
         <div className={"flex-none relative h-8 w-8 mr-4"}>
           <Image
-            src={workExperience.companyLogo}
-            alt={`${workExperience.companyName} logo`}
+            src={experience.companyLogo}
+            alt={`${experience.companyName} logo`}
             fill
             className={"rounded"}
           />
@@ -40,9 +40,9 @@ export const CompanyInformation: React.FC<Props> = ({ workExperience }) => {
               "text-primary font-poppins font-bold text-base sm:text-xl"
             }
           >
-            {workExperience.position}{" "}
+            {experience.position}{" "}
             <span className={"text-secondary font-normal"}>
-              at {workExperience.companyName}
+              at {experience.companyName}
             </span>
           </h2>
 

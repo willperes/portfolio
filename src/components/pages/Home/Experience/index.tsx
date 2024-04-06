@@ -1,4 +1,4 @@
-import { workExperiences } from "../../../../data/workExperiences";
+import { professionalExperiences } from "../../../../data/professionalExperiences";
 import { ExperienceEntry } from "./ExperienceEntry";
 
 export const Experience: React.FC = () => {
@@ -7,14 +7,12 @@ export const Experience: React.FC = () => {
       id={"experience"}
       className={"flex flex-col justify-center items-center"}
     >
-      <h1 className={"text-section-title mb-8 sm:mb-12"}>EXPERIENCE</h1>
+      <h1 className={"text-section-title mb-8 sm:mb-12"}>
+        PROFESSIONAL EXPERIENCE
+      </h1>
 
-      {workExperiences.map((experience, index) => (
-        <ExperienceEntry
-          key={index}
-          workExperience={experience}
-          index={index}
-        />
+      {professionalExperiences.map((experience, index) => (
+        <ExperienceEntry key={index} experience={experience} index={index} />
       ))}
     </section>
   );

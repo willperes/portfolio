@@ -1,7 +1,7 @@
 import { RichText } from "@/types/RichText";
-import { WorkExperience } from "@/types/WorkExperience";
+import { ProfessionalExperience } from "@/types/ProfessionalExperience";
 
-export const workExperiences: WorkExperience[] = [
+export const professionalExperiences: ProfessionalExperience[] = [
     {
         companyName: "Frexco",
         companyLogo: "/images/frexco.jpg",
@@ -30,7 +30,7 @@ export const workExperiences: WorkExperience[] = [
     {
         companyName: "Frexco",
         companyLogo: "/images/frexco.jpg",
-        position: "Front-end Engineer",
+        position: "Frontend Developer",
         startDate: new Date(2022, 2, 1),
         endDate: new Date(2024, 7, 30),
         description: [

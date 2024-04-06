@@ -50,5 +50,5 @@
 }
 
 .text-section-title {
-  @apply text-primary font-extrabold responsive-text-4xl;
+  @apply text-primary text-center font-extrabold responsive-text-4xl;
 }

@@ -1,6 +1,6 @@
 import { RichText } from "./RichText";
 
-export type WorkExperience = {
+export type ProfessionalExperience = {
     companyLogo: string;
     companyName: string;
     position: string;
