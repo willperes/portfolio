@@ -1,4 +1,4 @@
-import { workExperiences } from "../../../../../workExperiences";
+import { workExperiences } from "../../../../data/workExperiences";
 import { ExperienceEntry } from "./ExperienceEntry";
 
 export const Experience: React.FC = () => {

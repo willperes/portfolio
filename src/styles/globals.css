@@ -6,7 +6,7 @@
 @import url("./typography.css");
 
 :root {
-  --content-max-width: 800px;
+  --content-max-width: 900px;
 }
 
 * {
@@ -17,16 +17,34 @@
 
 html,
 body {
-  min-height: 100svh;
   max-width: 100vw;
 
   font-family: var(--font-inter);
 }
 
 body {
+  min-height: 100svh;
   line-height: 1;
+}
+
+#__next {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
 }
 
 .content-max-width {
   max-width: var(--content-max-width);
+}
+
+.content-padding {
+  @apply px-4 sm:px-8;
+}
+
+.header-height {
+  @apply h-16 sm:h-20;
+}
+
+.header-padding {
+  @apply pt-16 sm:pt-20;
 }

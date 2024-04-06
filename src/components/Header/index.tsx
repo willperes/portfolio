@@ -5,7 +5,7 @@ export const Header: React.FC = () => {
   return (
     <header
       className={
-        "fixed h-16 sm:h-20 w-full px-8 flex flex-row items-center justify-center bg-neutral-50/40 dark:bg-neutral-950/40 backdrop-blur-sm z-10"
+        "fixed header-height w-full px-8 flex flex-row items-center justify-center bg-neutral-50/40 dark:bg-neutral-950/40 backdrop-blur-sm z-10"
       }
     >
       <div
