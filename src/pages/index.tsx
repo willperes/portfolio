@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       <Head
-        title={"Willian Peres | Home"}
+        title={"Home"}
         description={
           "Welcome to Willian Peres's portfolio. Explore my experiences, projects, and learn more about me. Contact me to discuss collaboration opportunities"
         }

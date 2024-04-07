@@ -8,7 +8,7 @@ export default function Projects() {
   return (
     <>
       <Head
-        title={"Willian Peres | Projects"}
+        title={"Projects"}
         description={
           "Check out the projects that I have developed throughout my carreer as a developer"
         }
