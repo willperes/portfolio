@@ -8,11 +8,13 @@ export const Hero: React.FC = () => {
       id={"hero"}
       className={"flex flex-col justify-center items-center"}
     >
-      <div className={"relative h-64 w-64 max-[400px]:h-60 max-[400px]:w-60"}>
+      <div className={"relative h-60 w-60 min-[400px]:h-64 min-[400px]:w-64"}>
         <Image
           alt={"Willian Peres profile picture"}
           src={"/images/profile-picture.png"}
           fill
+          priority
+          sizes={"(min-width: 400px) 256px, 240px"}
           className={"rounded-full"}
         />
       </div>

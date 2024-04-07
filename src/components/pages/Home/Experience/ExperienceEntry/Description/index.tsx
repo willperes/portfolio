@@ -11,7 +11,7 @@ export const Description: React.FC<Props> = ({ description }) => {
       const isFirst = index === 0;
       const marginClassNames = isFirst ? "mt-4 sm:mt-6" : "mt-1 sm:mt-2";
       const classNames = `text-secondary responsive-text-xs ${marginClassNames}`;
-      return formatRichText(text, classNames);
+      return formatRichText(text, classNames, index);
     });
     return elements;
   }

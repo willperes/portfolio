@@ -26,6 +26,7 @@ export const CompanyInformation: React.FC<Props> = ({ experience }) => {
             src={experience.companyLogo}
             alt={`${experience.companyName} logo`}
             fill
+            sizes={"32px"}
             className={"rounded"}
           />
         </div>

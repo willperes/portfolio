@@ -2,20 +2,28 @@ import { RichText } from "@/types/RichText";
 
 export function formatRichText(
   text: RichText,
-  textClassNames: string
+  textClassNames: string,
+  textIndex: number
 ): JSX.Element {
   switch (text.type) {
     case RichText.Type.Paragraph: {
-      return <p className={textClassNames}>{text.content}</p>;
+      return (
+        <p key={`rich-text-p-${textIndex}`} className={textClassNames}>
+          {text.content}
+        </p>
+      );
     }
 
     case RichText.Type.UnorderedList: {
       const unorderedListItems = text.content.map((item, index) => (
-        <li key={index}>{item}</li>
+        <li key={`rich-text-li-item-${index}`}>{item}</li>
       ));
 
       return (
-        <ul className={`list-disc ml-4 ${textClassNames}`}>
+        <ul
+          key={`rich-text-ul-${textIndex}`}
+          className={`list-disc ml-4 ${textClassNames}`}
+        >
           {unorderedListItems}
         </ul>
       );

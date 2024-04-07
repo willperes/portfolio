@@ -26,8 +26,9 @@ export const ProjectCard: React.FC<Props> = ({
           alt={project.title}
           src={project.imageURL}
           fill
-          objectFit={"cover"}
+          sizes={"100%"}
           className={"rounded"}
+          style={{ objectFit: "cover" }}
         />
       </div>
 
