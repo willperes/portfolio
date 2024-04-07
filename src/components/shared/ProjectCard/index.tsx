@@ -43,15 +43,15 @@ export const ProjectCard: React.FC<Props> = ({
           {project.description}
         </p>
 
-        <div className={"flex flex-col sm:flex-row sm:items-start"}>
-          <p className={"text-secondary font-medium responsive-text-xs mt-2"}>
+        <div className={"flex flex-col sm:flex-row sm:items-start mt-2"}>
+          <p className={"text-secondary font-medium responsive-text-xs"}>
             Key Technologies and Tools:{" "}
             <span className={"text-tertiary"}>{`${project.keywords.join(
               ", "
             )}.`}</span>
           </p>
 
-          <div className={"mt-4 flex-none"}>
+          <div className={"sm:ml-2 mt-2 sm:mt-0 flex-none"}>
             <Button
               variant={ButtonVariant.SECONDARY}
               size={ButtonSize.SMALL}
