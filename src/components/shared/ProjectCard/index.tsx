@@ -1,16 +1,13 @@
 import Button, { ButtonSize, ButtonVariant } from "@/components/shared/Button";
 import { DevProject } from "@/types/DevProject";
 import Image from "next/image";
+import { KeyTechnologies } from "../KeyTechnologies";
 
 type Props = {
   project: DevProject;
-  isHomePage?: boolean;
 };
 
-export const ProjectCard: React.FC<Props> = ({
-  project,
-  isHomePage = false,
-}) => {
+export const ProjectCard: React.FC<Props> = ({ project }) => {
   function handleOpenProjectLink(): void {
     window.open(project.projectURL, "_blank");
   }
@@ -39,17 +36,12 @@ export const ProjectCard: React.FC<Props> = ({
           {project.title}
         </h1>
 
-        <p className={"text-tertiary responsive-text-xs mt-1"}>
+        <p className={"text-secondary responsive-text-xs mt-1"}>
           {project.description}
         </p>
 
         <div className={"flex flex-col sm:flex-row sm:items-start mt-2"}>
-          <p className={"text-secondary font-medium responsive-text-xs"}>
-            Key Technologies and Tools:{" "}
-            <span className={"text-tertiary"}>{`${project.keywords.join(
-              ", "
-            )}.`}</span>
-          </p>
+          <KeyTechnologies keywords={project.keywords} />
 
           <div className={"sm:ml-2 mt-2 sm:mt-0 flex-none"}>
             <Button

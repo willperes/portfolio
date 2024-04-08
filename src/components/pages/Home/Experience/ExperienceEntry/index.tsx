@@ -2,6 +2,7 @@ import { ProfessionalExperience } from "@/types/ProfessionalExperience";
 import Image from "next/image";
 import { Description } from "./Description";
 import { CompanyInformation } from "./CompanyInformation";
+import { KeyTechnologies } from "@/components/shared/KeyTechnologies";
 
 type Props = {
   experience: ProfessionalExperience;
@@ -14,14 +15,9 @@ export const ExperienceEntry: React.FC<Props> = ({ experience, index }) => {
       <CompanyInformation experience={experience} />
       <Description description={experience.description} />
 
-      <h3
-        className={"text-primary font-medium responsive-text-xs mt-2 sm:mt-4"}
-      >
-        Key Technologies and Tools:{" "}
-        <span className={"font-normal text-secondary"}>
-          {experience.keywords.join(", ").trimEnd()}.
-        </span>
-      </h3>
+      <div className={"mt-2 sm:mt-4"}>
+        <KeyTechnologies keywords={experience.keywords} />
+      </div>
     </div>
   );
 };
