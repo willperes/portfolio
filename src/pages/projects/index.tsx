@@ -1,4 +1,4 @@
-import { Header } from "@/components/Header";
+import { Header } from "@/components/shared/Header";
 import { Footer } from "@/components/shared/Footer";
 import { Head } from "@/components/shared/Head";
 import { devProjects } from "../../data/devProjects";

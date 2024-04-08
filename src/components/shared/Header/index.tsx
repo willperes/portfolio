@@ -1,5 +1,5 @@
 import Button, { ButtonVariant, ButtonSize } from "@/components/shared/Button";
-import { redirectToMail } from "@/utils/redirectToMail";
+import { handleRedirectToMail } from "@/utils/handleRedirectToMail";
 import Link from "next/link";
 
 export const Header: React.FC = () => {
@@ -26,7 +26,7 @@ export const Header: React.FC = () => {
         <Button
           variant={ButtonVariant.SECONDARY}
           size={ButtonSize.SMALL}
-          onClick={redirectToMail}
+          onClick={handleRedirectToMail}
         >
           Contact
         </Button>

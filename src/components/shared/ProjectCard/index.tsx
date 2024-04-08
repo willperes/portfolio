@@ -2,16 +2,13 @@ import Button, { ButtonSize, ButtonVariant } from "@/components/shared/Button";
 import { DevProject } from "@/types/DevProject";
 import Image from "next/image";
 import { KeyTechnologies } from "../KeyTechnologies";
+import { handleOpenLink } from "@/utils/handleOpenLink";
 
 type Props = {
   project: DevProject;
 };
 
 export const ProjectCard: React.FC<Props> = ({ project }) => {
-  function handleOpenProjectLink(): void {
-    window.open(project.projectURL, "_blank");
-  }
-
   return (
     <div className={"flex flex-col sm:flex-row"}>
       <div
@@ -20,8 +17,9 @@ export const ProjectCard: React.FC<Props> = ({ project }) => {
         }
       >
         <Image
-          alt={project.title}
+          data-testid={"project-card-image"}
           src={project.imageURL}
+          alt={project.title}
           fill
           sizes={"100%"}
           className={"rounded"}
@@ -47,7 +45,7 @@ export const ProjectCard: React.FC<Props> = ({ project }) => {
             <Button
               variant={ButtonVariant.SECONDARY}
               size={ButtonSize.SMALL}
-              onClick={handleOpenProjectLink}
+              onClick={() => handleOpenLink(project.projectURL)}
             >
               Check more
             </Button>

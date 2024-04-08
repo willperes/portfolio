@@ -3,7 +3,7 @@ import { Hero } from "@/components/pages/Home/Hero";
 import { AboutMe } from "@/components/pages/Home/AboutMe";
 import { Experience } from "@/components/pages/Home/Experience";
 import { Footer } from "@/components/shared/Footer";
-import { Header } from "@/components/Header";
+import { Header } from "@/components/shared/Header";
 import { Projects } from "@/components/pages/Home/Projects";
 import { Head } from "@/components/shared/Head";
 

@@ -1,5 +1,5 @@
 import Button, { ButtonSize, ButtonVariant } from "@/components/shared/Button";
-import { redirectToMail } from "@/utils/redirectToMail";
+import { handleRedirectToMail } from "@/utils/handleRedirectToMail";
 import Image from "next/image";
 
 export const Hero: React.FC = () => {
@@ -32,7 +32,7 @@ export const Hero: React.FC = () => {
         dedicated to crafting elegant and user-friendly mobile applications.
       </p>
 
-      <Button variant={ButtonVariant.PRIMARY} onClick={redirectToMail}>
+      <Button variant={ButtonVariant.PRIMARY} onClick={handleRedirectToMail}>
         Contact Me
       </Button>
     </section>
