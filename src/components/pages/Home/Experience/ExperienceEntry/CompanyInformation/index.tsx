@@ -1,5 +1,5 @@
 import { ProfessionalExperience } from "@/types/ProfessionalExperience";
-import { formatThreeLetterMonthAndYear } from "@/utils/formatDate";
+import { formatThreeLetterMonthAndYear } from "@/utils/formatThreeLetterMonthAndYear";
 import Image from "next/image";
 
 type Props = {
