@@ -21,6 +21,7 @@ export function formatRichText(
 
       return (
         <ul
+          data-testid={"rich-text-ul"}
           key={`rich-text-ul-${textIndex}`}
           className={`list-disc ml-4 ${textClassNames}`}
         >
