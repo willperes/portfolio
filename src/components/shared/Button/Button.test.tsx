@@ -33,7 +33,7 @@ describe("@/components/shared/Button", () => {
 
     const element = getByTestId("button-component");
     const classNames = element.className;
-    expect(classNames.includes(ButtonSizeMap.large)).not.toBeTruthy();
+    expect(classNames.includes(ButtonSizeMap.large)).toBeTruthy();
   });
 
   it("should render the button with a different variant", () => {
