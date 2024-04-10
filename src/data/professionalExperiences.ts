@@ -16,12 +16,12 @@ export const professionalExperiences: ProfessionalExperience[] = [
             {
                 type: RichText.Type.UnorderedList,
                 content: [
-                    "Developed and published an e-commerce mobile application using React Native from scratch with more than 5000 users.",
+                    "Developed and published an e-commerce mobile application from start to finish using React Native with more than 5000 users.",
                     "Implemented deep navigation and push notification functionalities to a React Native application.",
                     "Continuously maintained and extended features within the React Native mobile application using libraries such as React Navigation, Redux, and Styled-Components.",
                     "Conducted code reviews ensuring code quality and that best practices are being applied.",
                     "Implemented a digital wallet for receiving refunds and extra credits, and integrated it for product purchases.",
-                    "Maintained and implemented microservices crucial for e-commerce, including ordering, payments and refunds."
+                    "Maintained and implemented microservices crucial for e-commerce, including ordering, payments and refunds using NestJS, PostgreSQL, MongoDB, Docker e RabbitMQ"
                 ]
             }
         ],
@@ -30,7 +30,7 @@ export const professionalExperiences: ProfessionalExperience[] = [
     {
         companyName: "Frexco",
         companyLogo: "/images/frexco.jpg",
-        position: "Frontend Developer",
+        position: "Front-end Developer",
         startDate: new Date(2022, 2, 1),
         endDate: new Date(2024, 7, 30),
         description: [
@@ -39,7 +39,7 @@ export const professionalExperiences: ProfessionalExperience[] = [
                 content: [
                     "Implemented new features for an e-commerce application with ReactJS, Redux, Styled-Components.",
                     "Maintained and implemented features of a dashboard platform with ReactJS.",
-                    "Created the company website with multiple pages from scratch using NextJS, Sass, Material UI."
+                    "Created the company website with multiple pages from start to finish using NextJS, Sass, Material UI."
                 ]
             }
         ],
