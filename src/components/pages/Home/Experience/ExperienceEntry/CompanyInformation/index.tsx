@@ -1,5 +1,7 @@
 import { ProfessionalExperience } from "@/types/ProfessionalExperience";
+import { dateUtils } from "@/utils/dateUtils";
 import { formatThreeLetterMonthAndYear } from "@/utils/formatThreeLetterMonthAndYear";
+import { handleOpenLink } from "@/utils/handleOpenLink";
 import Image from "next/image";
 
 type Props = {
@@ -8,27 +10,37 @@ type Props = {
 
 export const CompanyInformation: React.FC<Props> = ({ experience }) => {
   function formatStartAndEndDate(): string {
+    const timeOnExperienceText = dateUtils.getYearsAndMonthFromDates(
+      experience.startDate,
+      experience.endDate
+    );
     const startDate = formatThreeLetterMonthAndYear(experience.startDate);
 
     if (experience.endDate) {
       const endDate = formatThreeLetterMonthAndYear(experience.endDate);
-      return `${startDate} - ${endDate}`;
+      return `${startDate} - ${endDate} (${timeOnExperienceText})`;
     }
 
-    return `${startDate} to present`;
+    return `${startDate} to present (${timeOnExperienceText})`;
   }
 
   return (
     <div className={"flex flex-row items-center"}>
       <div className={"flex flex-row items-center flex-1"}>
         <div className={"flex-none relative h-8 w-8 mr-4"}>
-          <Image
-            src={experience.companyLogo}
-            alt={`${experience.companyName} logo`}
-            fill
-            sizes={"32px"}
-            className={"rounded"}
-          />
+          <a
+            href={experience.linkedinURL}
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <Image
+              src={experience.companyLogo}
+              alt={`${experience.companyName} logo`}
+              fill
+              sizes={"32px"}
+              className={"rounded"}
+            />
+          </a>
         </div>
 
         <div
