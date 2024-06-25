@@ -28,14 +28,19 @@ export const CompanyInformation: React.FC<Props> = ({ experience }) => {
     <div className={"flex flex-row items-center"}>
       <div className={"flex flex-row items-center flex-1"}>
         <div className={"flex-none relative h-8 w-8 mr-4"}>
-          <Image
-            src={experience.companyLogo}
-            alt={`${experience.companyName} logo`}
-            fill
-            sizes={"32px"}
-            className={"rounded cursor-pointer"}
-            onClick={() => handleOpenLink(experience.linkedinURL)}
-          />
+          <a
+            href={experience.linkedinURL}
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <Image
+              src={experience.companyLogo}
+              alt={`${experience.companyName} logo`}
+              fill
+              sizes={"32px"}
+              className={"rounded"}
+            />
+          </a>
         </div>
 
         <div
