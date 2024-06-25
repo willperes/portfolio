@@ -5,7 +5,7 @@ export const Experience: React.FC = () => {
   return (
     <section
       id={"experience"}
-      className={"flex flex-col justify-center items-center"}
+      className={"flex flex-col justify-center items-center min-w-full"}
     >
       <h1 className={"text-section-title mb-8 sm:mb-12"}>
         PROFESSIONAL EXPERIENCE

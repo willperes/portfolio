@@ -1,5 +1,6 @@
 import { ProfessionalExperience } from "@/types/ProfessionalExperience";
 import { formatThreeLetterMonthAndYear } from "@/utils/formatThreeLetterMonthAndYear";
+import { handleOpenLink } from "@/utils/handleOpenLink";
 import Image from "next/image";
 
 type Props = {
@@ -27,7 +28,8 @@ export const CompanyInformation: React.FC<Props> = ({ experience }) => {
             alt={`${experience.companyName} logo`}
             fill
             sizes={"32px"}
-            className={"rounded"}
+            className={"rounded cursor-pointer"}
+            onClick={() => handleOpenLink(experience.linkedinURL)}
           />
         </div>
 
