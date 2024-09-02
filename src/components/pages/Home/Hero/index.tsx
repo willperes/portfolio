@@ -28,9 +28,9 @@ export const Hero: React.FC = () => {
       </h1>
 
       <p className={"text-secondary responsive-text-sm text-center mb-8"}>
-        Passionate Software Engineer with a focus on React Native development,
-        dedicated to crafting elegant and user-friendly mobile and web
-        applications.
+        Software Developer specialized in mobile development with React Native
+        and web with React.js, dedicated to crafting elegant and user-friendly
+        mobile and web applications.
       </p>
 
       <Button variant={ButtonVariant.PRIMARY} onClick={handleRedirectToMail}>
